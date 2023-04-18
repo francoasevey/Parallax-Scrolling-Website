@@ -42,6 +42,19 @@
             background-position: center;
             animation: marquee 20s linear infinite;
         }
+        .p-item4::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1000%;
+            height: 100%;
+            content: '';
+            background: url("images/fog_2.png") repeat-x;
+            background-size: contain;
+            background-position: center;
+            animation: marquee 20s linear infinite;
+            z-index: 1;
+        }
         @keyframes marquee{
             0%{
                 transform: translate3d(0,0,0);
@@ -53,7 +66,6 @@
         .container{
             position: relative;
             z-index: 1;
-            padding: 30px;
             max-width: 1140px;
             margin: 0 auto;
             margin-top: 100vh;
@@ -63,6 +75,7 @@
             color: white;
             text-align: center !important;
             text-transform: uppercase;
+            margin-right: -20%;
         }
         .content-header h1{
             font-size: 120px;
