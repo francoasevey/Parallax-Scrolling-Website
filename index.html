@@ -42,7 +42,27 @@
             background-position: center;
             animation: marquee 20s linear infinite;
         }
-        
+        @keyframes marquee{
+            0%{
+                transform: translate3d(0,0,0);
+            }
+            100%{
+                transform: translate3d(-200vw,0,0);
+            }
+        }
+        .container{
+            position: relative;
+            z-index: 1;
+            max-width: 1170px;
+            margin: 0 auto;
+            margin-top: 100vh;
+        }
+        .content-header{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
