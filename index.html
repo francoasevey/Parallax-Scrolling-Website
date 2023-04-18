@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Scrolling</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .paralax{
+            position: absolute;
+            height: 100%;
+        }
+        .paralax-item{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="paralax">
@@ -18,6 +34,9 @@
         <div class="content-header">
             <h1>Parallax Design</h1>
             <h2>The next level Parallax Scrolling Web Design</h2>
+        </div>
+        <div class="content">
+            <img src="/images/astro.png" alt="astro">
         </div>
     </div>
 </body>
